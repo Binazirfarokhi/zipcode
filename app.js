@@ -13,7 +13,7 @@ async function getzipcode(userInput){
   const latitude = data.places[0].latitude;
 const longitude = data.places[0].longitude;
 const mapUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
-show.innerHTML =`<div><a href="${mapUrl}" target="_blank"></a></div>`
+show.innerHTML =`<div><a href="${mapUrl}" target="_blank">show me on map</a></div>`
     }catch(error){
         // console.log(error);
         show.innerHTML = `<div>oppppsss!</div>`
