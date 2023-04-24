@@ -1,4 +1,4 @@
-const btn = document.getElementById('btn');
+const form = document.getElementById('form');
 const code = document.getElementById('code');
 const show = document.getElementById('show');
 
@@ -21,7 +21,7 @@ show.innerHTML =`<div><a href="${mapUrl}" target="_blank">show me on map</a></di
  
 
 }
-btn.addEventListener('click',function(){
+form.addEventListener('submit',function(){
    
 
     const userInput = code.value;
