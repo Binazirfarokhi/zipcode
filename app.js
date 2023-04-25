@@ -21,8 +21,8 @@ show.innerHTML =`<div><a href="${mapUrl}" target="_blank">show me on map</a></di
  
 
 }
-form.addEventListener('submit',function(){
-   
+form.addEventListener('submit',function(e){
+   e.preventDefault();
 
     const userInput = code.value;
 
